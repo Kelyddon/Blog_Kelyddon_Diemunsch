@@ -1,0 +1,665 @@
+/*-------------------------header-------------------*/
+
+header {
+  background-image: linear-gradient(0deg, #0c77df 30%, #0916f7 60%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+header .en-tete {
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: rgba(12, 157, 199, 0.7);
+  margin: 4%;
+  color: white;
+}
+
+header .header_a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  display: block;
+  padding: 0.05em 0.3em;
+  border-top: 1px solid black;
+  background-image: linear-gradient(0deg, #0cdfb7 30%, #0a9c90 60%);
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .burger-menu>label {
+    display: inline-block;
+  }
+  .burger-menu>.close {
+    display: none;
+  }
+  .burger-menu>input:checked~nav {
+    display: block;
+  }
+  .burger-menu>input:checked~.close {
+    display: inline-block;
+  }
+  .burger-menu>input:checked~.open {
+    display: none;
+  }
+  .burger-menu>input {
+    display: none;
+  }
+  .burger-menu nav {
+    display: none;
+    position: absolute;
+    top: 5em;
+    right: 1em;
+    background-image: linear-gradient(0deg, #0cdfb7 20%, #26fe8d 50%);
+    font-size: 1.5em;
+  }
+  .button {
+    font-size: 2em;
+    margin-right: 0.3em;
+  }
+  .croix {
+    font-size: 2.3em;
+    margin-right: 0.3em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .burger-menu {
+    flex: 2;
+  }
+  .burger-menu input,
+  .burger-menu label,
+  .burger-menu i {
+    display: none;
+  }
+  .burger-menu nav {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    width: 100%;
+  }
+  .burger-menu nav .header_a {
+    border: none;
+  }
+}
+
+/*-------------------------header-------------------*/
+
+/*-------------------------Body---------------------*/
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.bodyhome {
+  padding: 0%;
+  margin: 0%;
+  background-image: url("../imagesnocode/Designsanstitre(1).png");
+  background-position: center;
+}
+
+.bodyhome main {
+  display: block;
+  background-color: rgba(33, 13, 131, 0.5);
+}
+
+.bodyhome main p {
+  font-size: 1.5em;
+}
+
+.bodyhome .fondallnodcede {
+        display: block;
+        background-color: rgba(33, 13, 131, 0.50);
+}
+  .bodyhome .fondallnodcede p {
+            font-size: 1.5em;
+        }
+.bodyhome .fondtech{
+  background-color:rgba(232, 232, 232, 0.90);
+}
+    
+.bodyhome .fondalltech {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.30);
+    }
+.bodyhome .fondalltech p {
+            font-size: 1.5em;
+        }
+.bodyhome .imagetitreaccueilnoco {
+  background-image: url("../imagesnocode/nocode-summit-2024-600x300.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bodyhome .imagetitreaccueiltech {
+  background-image: url("../imagestech/tech-show-paris.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bodyhome .titreaccueil {
+  text-align: center;
+  padding: 5%;
+  color: rgb(250, 250, 250);
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 1em;
+}
+
+.bodyhome h1 {
+  font-family: "Bona Nova SC", sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+.bodyhome .texte_intro {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  margin: 0% 5%;
+  padding: 3% 4%;
+  background-color: rgb(20, 169, 194);
+}
+
+.bodyhome h2 {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.bodyhome h3 {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom:1.5em;
+}
+
+.bodyhome article {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 3%;
+  border-radius: 1em;
+  padding: 2%;
+  border-spacing: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 5px 5px 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px 10px 10px;
+  line-height: 1.8em;
+}
+
+.bodyhome article li {
+  line-height: 1.3em;
+}
+
+.bodyhome article section {
+  margin: 5%;
+}
+
+.bodyhome article ul {
+  list-style-type: none;
+}
+
+.bodyhome .lien {
+  background-image: linear-gradient(0deg, #15d7a5 20%, #0cdf76 50%);
+  font-size: 20px;
+  font-family: "Comic neue", sans-serif;
+  color: white;
+  margin: 0%;
+  padding: 1%;
+}
+
+.bodyhome .lien:hover {
+  background-color: white;
+  color: black;
+}
+
+.bodyhome .galerie {
+  margin: 0%;
+}
+
+.bodyhome .galerieh2 {
+  color: white;
+  background-color: rgba(0, 0, 166, 0.8);
+}
+
+.bodyhome .imagedroite {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.bodyhome .presentationintervenants {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.bodyhome h4 {
+  line-height: 1.2;
+}
+.bodyhome .github{
+  color:white;
+}
+
+@media screen and (min-width: 1001px) {
+  main .gridhome1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7em;
+    border: 5px solid black;
+    background-color: rgba(13, 49, 148, 0.71);
+    grid-template-rows: auto;
+  }
+  main .gridhome1 div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5em;
+    
+  }
+  main .gridhome1divise1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  main .imagegauche {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  main .imagegauch {
+    width: 50%;
+    height: auto;
+  }
+  main .gridintervenant {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5em;
+  }
+
+  main .gridintervenant img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20em;
+  }
+  main .gridintervenant2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5em;
+  }
+  main .gridintervenant2 img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20em;
+  }
+  main .gridhome2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+    grid-template-rows: auto;
+  }
+
+  main .gridhome2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .gridhome2 .grid1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  main .gridhome2 .grid2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  main .gridhome2 .grid3 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  main .gridhome2 .grid5 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  main .gridhometechshow {
+    display: grid;
+    padding: 0.5%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+    grid-template-rows: auto;
+    border: 5px solid black;
+    background-color: rgba(12, 22, 199, 0.3);
+  }
+  main .gridhometechshow div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5em;
+  }
+  .slideshow-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+  }
+  .main-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  .main-image {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .main-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  #caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 30px;
+  }
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .gallery {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 15px;
+  }
+
+  .gallery:hover {
+    transform: scale(1.1);
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(253, 253, 253, 0.5);
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .legend {
+
+    padding: 20px;
+    background-color: rgba(27, 27 , 27, 0.8);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+
+  }
+  main .text-gallery{
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 499px) {
+  main .gridhome1 {
+    display: grid;
+    padding: 5%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    grid-template-rows: auto;
+    border: 5px solid black;
+    background-color: rgba(13, 49, 148, 0.71);
+  }
+  main div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5em;
+  }
+  main .gridhome2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+  }
+  main .imagegauche {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .gridintervenant {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5em;
+  }
+  main .gridintervenant img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20em;
+  }
+  main .gridintervenant2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5em;
+  }
+  main .gridintervenant2 img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20em;
+  }
+  main .gridhome2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5em;
+    grid-template-rows: auto;
+  }
+  main .gridhome2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .gridhometechshow {
+    display: grid;
+    padding: 2%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    grid-template-rows: auto;
+    border: 5px solid black;
+    background-color: rgba(12, 22, 199, 0.3);
+  }
+  main .gridhometechshow div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5em;
+  }
+  main .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.9em;
+    grid-template-rows: auto;
+  }
+  main .gallery{
+    width:100%;
+    height:100%;
+    object-fit:cover
+  }
+  main .main-image{
+    display:none;
+  }
+  main .text-gallery{
+    background-color:lightblue;
+    margin-bottom:2em;
+    font-size:1.5em;
+  }
+  main .prev, .next{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  main .gridhome1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5em;
+    grid-template-rows: auto;
+    border: 5px solid black;
+    background-color: rgba(13, 49, 148, 0.71);
+  }
+  main div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5em;
+  }
+  main .gridhome2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+  }
+  main .imagegauche {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .gridintervenant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  main .gridintervenant img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20em;
+  }
+  main .gridintervenant2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  main .gridintervenant2 img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20em;
+  }
+  main .gridhome2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+    grid-template-rows: auto;
+  }
+  main .gridhome2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .gridhome2 .grid1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  main .gridhome2 .grid2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  main .gridhome2 .grid3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  main .gridhome2 .grid5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  main .gridhometechshow {
+    display: grid;
+    padding: 2%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    grid-template-rows: auto;
+    border: 5px solid black;
+    background-color: rgba(12, 22, 199, 0.3);
+  }
+  main .gridhometechshow div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5em;
+  }
+  main .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.9em;
+    grid-template-rows: auto;
+  }
+  main .gallery{
+    width:100%;
+    height:100%;
+    object-fit:cover
+  }
+  main .main-image{
+    display:none;
+  }
+  main .text-gallery{
+    background-color:lightblue;
+    margin-bottom:2em;
+    font-size:1.5em;
+  }
+  main .prev, .next{
+    display:none;
+  }
+}
+
